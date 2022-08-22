@@ -24,8 +24,8 @@ RegularQueue_st* RegularQueue__create(int size) {
 
 void RegularQueue__reset(RegularQueue_st* self) {
     // Destructor (without deallocation).
-    //free(self->queue);
-    //self->queue = NULL;
+    free(self->queue);
+    self->queue = NULL;
 }
 
 void RegularQueue__destroy(RegularQueue_st* self) {
