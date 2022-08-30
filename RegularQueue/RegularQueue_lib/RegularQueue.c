@@ -4,21 +4,25 @@
 
 typedef struct RegularQueue_st RegularQueue_st;
 struct RegularQueue_st {
-    int size;
+    int max_size;
     int head;
     int tail;
     int *queue;
 };
 
 RegularQueue_st* RegularQueue__create(int size) {
+    if (size <= 0) {
+        return NULL;
+    }
     RegularQueue_st* result = (RegularQueue_st*) malloc(sizeof(RegularQueue_st));
     if (result == NULL) {
         return NULL;
     }
-    result->size = size;
+    result->max_size = size;
     result->queue = calloc(size, sizeof (int));
     result->head = -1;
     result->tail = -1;
+    printf("Head: %d, Tail: %d", result->head, result->tail);
     return result;
 }
 
@@ -41,7 +45,7 @@ int RegularQueue__is_empty(RegularQueue_st* self) {
 }
 
 int RegularQueue__is_full(RegularQueue_st* self) {
-    return self->head == 0 && self->tail == self->size - 1;
+    return self->head == 0 && self->tail == self->max_size - 1;
 }
 
 void RegularQueue__enqueue(RegularQueue_st* self, int value) {
@@ -55,6 +59,7 @@ void RegularQueue__enqueue(RegularQueue_st* self, int value) {
         self->queue[self->tail] = value;
         printf("Inserted -> %d\n", value);
     }
+    printf("Head: %d, Tail: %d", self->head, self->tail);
 }
 
 int RegularQueue__dequeue(RegularQueue_st* self) {
@@ -78,12 +83,17 @@ int RegularQueue__peek(RegularQueue_st* self) {
     return self->queue[self->head];
 }
 
+int RegularQueue__max_size(RegularQueue_st* self) {
+    return self->max_size;
+}
+
+
 int RegularQueue__size(RegularQueue_st* self) {
-    return self->size;
+    return self->tail - self->head;
 }
 
 void RegularQueue__display(RegularQueue_st* self) {
-    for (int i = 0; i < self->size; ++i) {
+    for (int i = 0; i < self->max_size; ++i) {
         printf("%d ", self->queue[i]);
     }
 }

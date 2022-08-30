@@ -10,6 +10,7 @@ int RegularQueue__is_full(RegularQueue_st* self);
 void RegularQueue__enqueue(RegularQueue_st* self, int value);
 int RegularQueue__dequeue(RegularQueue_st* self);
 int RegularQueue__peek(RegularQueue_st* self);
+int RegularQueue__max_size(RegularQueue_st* self);
 int RegularQueue__size(RegularQueue_st* self);
 void RegularQueue__display(RegularQueue_st* self);
 
