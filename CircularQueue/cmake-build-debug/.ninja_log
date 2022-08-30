@@ -1,0 +1,17 @@
+# ninja log v5
+1	101	6835196579622107	CircularQueue_lib/CMakeFiles/CircularQueue_lib.dir/CircularQueue.c.obj	90b91c94c44f6b94
+11	4514	6835196623632142	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	c0f239f507b97ef9
+101	198	6835196580602197	CircularQueue_lib/libCircularQueue_lib.a	3a68a579cecf0010
+16	790	6835196586522062	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c18b65f67b61c13e
+7	825	6835196586882103	Google_tests/CMakeFiles/Google_Tests_run.dir/CircularQueueTest.cpp.obj	990dfb4c103468af
+6043	7989	6835196658433456	Google_tests/Google_Tests_run.exe	81cec062984a40a4
+4516	5987	6835196638502170	lib/libgtest.a	60bd595ffb7b3a48
+5988	6043	6835196639072712	lib/libgtest_main.a	f758a1e0b0024094
+4	114	6835265016699386	CircularQueue_lib/CMakeFiles/CircularQueue_lib.dir/CircularQueue.c.obj	89487144959acb8e
+114	178	6835265017349402	CircularQueue_lib/libCircularQueue_lib.a	3a68a579cecf0010
+25	1010	6835265025659396	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	8f2c49ec240363b7
+11	1058	6835265026139403	Google_tests/CMakeFiles/Google_Tests_run.dir/CircularQueueTest.cpp.obj	219a3cf6ea063767
+18	4704	6835265062489328	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	9f7d3312ff0106c7
+4705	6139	6835265076959335	lib/libgtest.a	60bd595ffb7b3a48
+6140	6187	6835265077459308	lib/libgtest_main.a	f758a1e0b0024094
+6187	8081	6835265096309428	Google_tests/Google_Tests_run.exe	81cec062984a40a4

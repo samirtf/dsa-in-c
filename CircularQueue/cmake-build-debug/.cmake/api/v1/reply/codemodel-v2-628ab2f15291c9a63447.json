@@ -1,0 +1,272 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "CircularQueue_lib",
+					"jsonFile" : "directory-CircularQueue_lib-Debug-ade49d94c2aff1fe1f67.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "CircularQueue_lib",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Google_tests",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Google_tests-Debug-0edb77f8d1483ac16915.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Google_tests",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Google_tests/lib",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Google_tests.lib-Debug-e2071534875f67d50854.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "Google_tests/lib"
+				},
+				{
+					"build" : "Google_tests/lib/googlemock",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Google_tests.lib.googlemock-Debug-0d21aa9e59becdff97fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "Google_tests/lib/googlemock",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "Google_tests/lib/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Google_tests.lib.googletest-Debug-94cec8bead84dd133972.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 5,
+					"source" : "Google_tests/lib/googletest",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TestingCircularQueue",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "CircularQueue",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Google_tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 2
+				},
+				{
+					"childIndexes" : 
+					[
+						5
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gmock",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gtest",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CircularQueue_lib::@3ca7bfdef77c1446ff0c",
+					"jsonFile" : "target-CircularQueue_lib-Debug-61f4cfde5151687abb88.json",
+					"name" : "CircularQueue_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CircularQueue_run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CircularQueue_run-Debug-03478fbbb35b44fda975.json",
+					"name" : "CircularQueue_run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Google_Tests_run::@eb06d550d4862b816b8d",
+					"jsonFile" : "target-Google_Tests_run-Debug-ef42815e4fa2647dfc7e.json",
+					"name" : "Google_Tests_run",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock::@8e4042a334827d542816",
+					"jsonFile" : "target-gmock-Debug-d7fce1a0da8764c599c7.json",
+					"name" : "gmock",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock_main::@8e4042a334827d542816",
+					"jsonFile" : "target-gmock_main-Debug-dcbac90b60b9821cd366.json",
+					"name" : "gmock_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest::@30f1f5c04acc29f5722e",
+					"jsonFile" : "target-gtest-Debug-76ec06b52750dd6bc615.json",
+					"name" : "gtest",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest_main::@30f1f5c04acc29f5722e",
+					"jsonFile" : "target-gtest_main-Debug-b2f0612aeaa474e67cf8.json",
+					"name" : "gtest_main",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/samir.feitosa/Documents/samirtf/estudo/github/dsa-in-c/CircularQueue/cmake-build-debug",
+		"source" : "C:/Users/samir.feitosa/Documents/samirtf/estudo/github/dsa-in-c/CircularQueue"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
