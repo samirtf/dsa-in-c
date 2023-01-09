@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 #include "RegularQueue.h"
 
 typedef struct RegularQueue_st RegularQueue_st;
